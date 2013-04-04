@@ -562,7 +562,7 @@ public abstract class PlaybackController {
 			@Override
 			public void onClick(View v) {
 				if (status == PlayerStatus.PLAYING) {
-					playbackService.seekDelta(-DEFAULT_SEEK_DELTA);
+					playbackService.seekDelta(-10000);
 				}
 			}
 		};
