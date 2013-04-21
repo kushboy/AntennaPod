@@ -166,7 +166,7 @@ public class ExternalEpisodesListAdapter extends BaseExpandableListAdapter {
 			holder.downloadStatus.setVisibility(View.INVISIBLE);
 			holder.lenSize.setVisibility(View.INVISIBLE);
 		}
-		
+
 		holder.feedImage.setTag(item.getImageLoaderCacheKey());
 		ImageLoader.getInstance().loadThumbnailBitmap(
 				item,
@@ -209,7 +209,12 @@ public class ExternalEpisodesListAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public int getGroupCount() {
-		return 2;
+		// Hide 'unread items' group if empty
+		if (manager.getUnreadItemsSize(true) > 0) {
+			return 2;
+		} else {
+			return 1;
+		}
 	}
 
 	@Override
@@ -226,20 +231,26 @@ public class ExternalEpisodesListAdapter extends BaseExpandableListAdapter {
 		TextView headerTitle = (TextView) convertView
 				.findViewById(R.id.txtvHeaderTitle);
 		ImageButton actionButton = (ImageButton) convertView
-				.findViewById(R.id.butAction);
+				.findViewById(R.id.butAction);	
+		TextView numItems = (TextView) convertView.findViewById(R.id.txtvNumItems);
+		
 		String headerString = null;
+		int childrenCount = 0;
+		
 		if (groupPosition == 0) {
 			headerString = context.getString(R.string.queue_label);
-			if (manager.getQueueSize(true) > 0) {
-				headerString += " (" + getChildrenCount(GROUP_POS_QUEUE) + ")";
-			}
+			childrenCount = getChildrenCount(GROUP_POS_QUEUE);
 		} else {
 			headerString = context.getString(R.string.waiting_list_label);
-			if (manager.getUnreadItemsSize(true) > 0) {
-				headerString += " (" + getChildrenCount(GROUP_POS_UNREAD) + ")";
-			}
+			childrenCount = getChildrenCount(GROUP_POS_UNREAD);
 		}
 		headerTitle.setText(headerString);
+		if (childrenCount <= 0) {
+			numItems.setVisibility(View.INVISIBLE);
+		} else {
+			numItems.setVisibility(View.VISIBLE);
+			numItems.setText(Integer.toString(childrenCount));
+		}
 		actionButton.setFocusable(false);
 		actionButton.setOnClickListener(new OnClickListener() {
 
