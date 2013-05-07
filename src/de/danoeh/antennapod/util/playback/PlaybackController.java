@@ -562,11 +562,25 @@ public abstract class PlaybackController {
 			@Override
 			public void onClick(View v) {
 				if (status == PlayerStatus.PLAYING) {
-					playbackService.seekDelta(-10000);
+					playbackService.seekDelta(-30000);
 				}
 			}
 		};
 	}
+	
+	
+	public OnClickListener newOnRevTenButtonClickListener() {
+		return new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (status == PlayerStatus.PLAYING) {
+					playbackService.seekDelta(-10000);
+				}
+			}
+		};
+	}	
+	
+	
 
 	public OnClickListener newOnFFButtonClickListener() {
 		return new OnClickListener() {

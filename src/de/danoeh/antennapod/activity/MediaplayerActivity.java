@@ -48,6 +48,7 @@ public abstract class MediaplayerActivity extends SherlockFragmentActivity
 	protected SeekBar sbPosition;
 	protected ImageButton butPlay;
 	protected ImageButton butRev;
+	protected ImageButton butRevTen;
 	protected ImageButton butFF;
 
 	private PlaybackController newPlaybackController() {
@@ -397,6 +398,7 @@ public abstract class MediaplayerActivity extends SherlockFragmentActivity
 		txtvLength = (TextView) findViewById(R.id.txtvLength);
 		butPlay = (ImageButton) findViewById(R.id.butPlay);
 		butRev = (ImageButton) findViewById(R.id.butRev);
+		butRevTen = (ImageButton) findViewById(R.id.butRevTen);
 		butFF = (ImageButton) findViewById(R.id.butFF);
 
 		// SEEKBAR SETUP
@@ -410,6 +412,8 @@ public abstract class MediaplayerActivity extends SherlockFragmentActivity
 		butFF.setOnClickListener(controller.newOnFFButtonClickListener());
 
 		butRev.setOnClickListener(controller.newOnRevButtonClickListener());
+		
+		butRevTen.setOnClickListener(controller.newOnRevTenButtonClickListener());
 
 	}
 

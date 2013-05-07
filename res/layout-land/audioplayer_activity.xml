@@ -105,6 +105,14 @@
                 android:background="?attr/borderless_button"
                 android:src="?attr/av_rewind" />
 
+	            <ImageButton
+	                android:id="@+id/butRevTen"
+	                android:layout_width="80dp"
+	                android:layout_height="match_parent"
+	                android:layout_toLeftOf="@id/butPlay"
+	                android:background="?attr/borderless_button"
+	                android:src="?attr/av_rewind_10" />
+
             <ImageButton
                 android:id="@+id/butFF"
                 android:layout_width="80dp"
