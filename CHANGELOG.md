@@ -1,5 +1,179 @@
 Change Log
 ==========
+Version 1.5.0
+-------------
+* Exclude episodes from auto download by keyword
+* Configure feeds to prevent them from refreshing automatically
+* Improved audio player
+* Improved UI
+* Bug fixes
+
+Version 1.4.1
+-------------
+* Performance improvements
+* Hardware buttons now ff and rewind instead of skipping
+* Option to have forward button skip
+* Option to send crash reports directly to developers
+* Highlight currently playing episode
+* Widget improvements
+
+Version 1.4.0.12
+----------------
+* Fix for crash on Huawei devices (media buttons may not work)
+
+Version 1.4
+-----------
+* BLUETOOTH PERMISSION: Needed to be able to resume playback when a Bluetooth device reconnects with your phone
+* VIBRATE PERMISSION: Used optionally with the sleep timer
+* Native variable speed playback (experimental via options)
+* Improved sleep timer
+* Mark episodes as 'favorite'
+* Notification can skip episodes
+* Keep episodes when skipping them
+* Episode art on lock screen
+* Flexible episode cleanup
+* Rewind after pause
+* Usability improvements
+* Bug fixes
+
+Version 1.3
+-----------
+* Bulk actions on feed episodes (download, queue, delete)
+* Reduced space used by images
+* Automatic refresh at a certain time of day
+* Customizable indicators and sorting for feeds
+* Ability to share feeds
+* Improved auto download
+* Many fixes and usability improvements
+
+Version 1.2
+-----------
+* Optionally disable swiping and dragging in the queue
+* Resume playback after phone call
+* Filter episodes in the Podcast feed
+* Hide items in the Nav drawer
+* Customize times for fast forward and rewind
+* Resolved issues with opening some OPML files
+* Various bug fixes and usability improvements
+
+Version 1.1
+-----------
+* iTunes podcast integration
+* Swipe to remove items from the queue
+* Set the number of parallel downloads
+* Fix for gpodder.net on old devices
+* Fixed date problems for some feeds
+* Display improvements
+* Usability improvements
+* Several other bugfixes
+
+Version 1.0
+-----------
+* The queue can now be sorted
+* Added option to delete episode after playback
+* Fixed a bug that caused chapters to be displayed multiple times
+* Several other improvements and bugfixes
+
+
+Version 0.9.9.6
+---------------
+* Fixed problems related to variable playback speed plugins
+* Fixed automatic feed update problems
+* Several other bugfixes and improvements
+
+Version 0.9.9.5
+---------------
+* Added support for paged feeds
+* Improved user interface
+* Added Japanese and Turkish translations
+* Fixed more image loading problems
+* Other bugfixes and improvements
+
+Version 0.9.9.4
+---------------
+* Added option to keep notification and lockscreen controls when playback is paused
+* Fixed a bug where episode images were not loaded correctly
+* Fixed battery usage problems
+
+Version 0.9.9.3
+---------------
+* Fixed video playback problems
+* Improved image loading
+* Other bugfixes and improvements
+
+Version 0.9.9.2
+---------------
+* Added support for feed discovery if a website URL is entered
+* Added support for 'next'/'previous' media keys
+* Improved sleep timer
+* Timestamps in shownotes can now be used to jump to a specific position
+* Automatic Flattring is now configurable
+* Several bugfixes and improvements
+
+Version 0.9.9.1
+---------------
+* Several bugfixes and improvements
+
+Version 0.9.9.0
+---------------
+* New user interface
+* Failed downloads are now resumed when restarted
+* Added support for Podlove Alternate Feeds
+* Added support for "pcast"-protocol
+* Added backup & restore functionality. This feature has to be enabled in the Android settings in order to work
+* Several bugfixes and improvements
+
+Version 0.9.8.3
+---------------
+* Added support for password-protected feeds and episodes
+* Added support for more types of episode images
+* Added Hebrew translation
+* Several bugfixes and improvements
+
+Version 0.9.8.2
+---------------
+* Several bugfixes and improvements
+* Added Korean translation
+
+Version 0.9.8.1
+---------------
+* Added option to flattr an episode automatically after 80 percent of the episode have been played
+* Added Polish translation
+* Several bugfixes and improvements
+
+Version 0.9.8.0
+---------------
+* Added access to the gpodder.net directory
+* Added ability to sync podcast subscriptions with the gpodder.net service
+* Automatic download can now be turned on or off for specific podcasts
+* Added option to pause playback when another app is playing sounds
+* Added Dutch and Hindi translation
+* Resolved a problem with automatic podcast updates
+* Resolved a problem with the buttons' visibility in the episode screen
+* Resolved a problem where episodes would be re-downloaded unnecessarily
+* Several other bugfixes and usability improvements
+
+Version 0.9.7.5
+---------------
+* Reduced application startup time
+* Reduced memory usage
+* Added option to change the playback speed
+* Added Swedish translation
+* Several bugfixes and improvements
+
+Version 0.9.7.4
+---------------
+* Episode cache size can now be set to unlimited
+* Removing an episode in the queue via sliding can now be undone
+* Added support for Links in MP3 chapters
+* Added Czech(Czech Republic), Azerbaijani and Portuguese translations
+* Several bugfixes and improvements
+
+Version 0.9.7.3
+---------------
+* Bluetooth devices now display metadata during playback (requires AVRCP 1.3 or higher)
+* User interface improvements
+* Several bugfixes
 
 Version 0.9.7.2
 ---------------
